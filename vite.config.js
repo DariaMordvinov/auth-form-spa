@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/auth-form-spa/',
   plugins: [react()],
   css: {
     postcss: {
