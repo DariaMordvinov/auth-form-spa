@@ -35,3 +35,9 @@
     font-family: "Inter", sans-serif;
     color: var(--dark-gray);
 }
+
+@media (max-width: 641px) {
+    .inputField {
+        width: 100%;
+    }
+}

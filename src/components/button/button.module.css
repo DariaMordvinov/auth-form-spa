@@ -21,3 +21,12 @@
 .button:active {
     background-image: var(--violet-gradient-dark);
 }
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+    background-image: none;
+    background-color: var(light-gray);
+    color: var(--dark-gray);
+    cursor: not-allowed;
+}

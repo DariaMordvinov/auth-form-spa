@@ -1,0 +1,35 @@
+.red {
+    fill: var(--red);
+}
+
+.red:hover {
+    fill: var(--red-hover);
+}
+
+.red:active {
+    fill: var(--red-active);
+}
+
+.green {
+    fill: var(--green);
+}
+
+.green:hover {
+    fill: var(--green-hover);
+}
+
+.green:active {
+    fill: var(--green-active);
+}
+
+.orange {
+    fill: var(--orange);
+}
+
+.orange:hover {
+    fill: var(--orange-hover);
+}
+
+.orange:active {
+    fill: var(--orange-active);
+}

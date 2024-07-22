@@ -1,0 +1,25 @@
+.list {
+    position: fixed;
+    top: 1rem;
+    right: 0;
+    padding: 1rem 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 35rem;
+    height: 100vh;
+    overflow: hidden auto;
+    animation: move-toast 250ms;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes move-toast {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

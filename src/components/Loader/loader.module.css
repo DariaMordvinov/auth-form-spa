@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.blob {
+    background: var(--violet);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 var(--light-violet);
+    height: 2rem;
+    width: 2rem;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 var(--light-violet);
+    }
+
+    70% {
+        transform: scale(1.3);
+        box-shadow: 0 0 0 10px var(--light-violet);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 var(--light-violet);
+    }
+}

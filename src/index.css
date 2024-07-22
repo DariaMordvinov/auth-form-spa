@@ -20,10 +20,20 @@
   --light: oklch(100% 0 281.75 / 98.94%);
   --dark-gray: oklch(25.27% 0.005 204.35 / 91.45%);
   --light-gray: oklch(46.32% 0 298);
+  --light-violet: oklch(67.5% 0.274 318.71 / 32.97%);
   --violet: oklch(56.77% 0.274 318.71 / 70.53%);
   --dark-violet: oklch(56.77% 0.274 318.71 / 78.15%);
   --violet-blue: oklch(47.06% 0.269 281.75 / 74.87%);
   --dark-violet-blue: oklch(47.06% 0.269 281.75 / 98.1%);
+  --red: oklch(60.88% 0.227 25.41 / 98.1%);
+  --red-hover: oklch(60.88% 0.1535 25.41);
+  --red-active: oklch(53.99% 0.1535 25.41);
+  --green: oklch(82.13% 0.19 145.06);
+  --green-hover: oklch(73.37% 0.19 145.06);
+  --green-active: oklch(59.51% 0.19 145.06);
+  --orange: oklch(73.32% 0.1608 43.41);
+  --orange-hover: oklch(69.73% 0.1608 43.41);
+  --orange-active: oklch(62.93% 0.1608 43.41);
   --violet-gradient: linear-gradient(100deg, oklch(56.77% 0.274 318.71 / 70.53%) -0.03%, oklch(47.06% 0.269 281.75 / 74.87%) 51.08%, oklch(56.77% 0.274 318.71 / 70.53%) 94%);
   --violet-gradient-dark: linear-gradient(100deg, oklch(46.77% 0.274 318.71 / 70.53%) -0.03%, oklch(37.06% 0.269 281.75 / 74.87%) 51.08%, oklch(46.77% 0.274 318.71 / 70.53%) 94%);
 }
