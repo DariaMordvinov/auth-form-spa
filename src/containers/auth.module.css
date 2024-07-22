@@ -1,3 +1,109 @@
-.button {
+.wrapper {
+    height: fit-content;
+    min-width: 50rem;
+    max-width: 50rem;
+    background: var(--background-secondary);
+    border-radius: 1.2rem;
     display: flex;
+    flex-direction: column;
 }
+
+.header {
+    user-select: none;
+    color: var(--dark-gray);
+    border-bottom: 0.8px solid white;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+}
+
+.secondaryTitle {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+}
+
+.formWrapper,
+.header,
+.footer {
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.8px solid white;
+    gap: 0.5rem;
+    height: 18rem;
+}
+
+.recoveryLink {
+    font-size: 1.3rem;
+    color: var(--light-gray);
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.recoveryLink:hover,
+.signLink:hover {
+    color: var(--violet-blue);
+}
+
+.recoveryLink:active,
+.signLink:active {
+    color: var(--dark-violet-blue)
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+
+.footerText {
+    width: 100%;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+.signLink {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--violet);
+}
+
+@media (max-width: 641px) {
+    .wrapper {
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 769px) {}
+
+@media (max-width: 1025px) {}
+
+@media (max-width: 1281px) {}
+
+@media (max-width: 1537px) {}

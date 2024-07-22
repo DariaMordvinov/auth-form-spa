@@ -14,13 +14,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
-  --font-size--xs: 1.2rem;
-  --font-size--small: 1.4rem;
-  --font-size--default: 1.6rem;
-  --font-size--large: 2rem;
-  --font-size--xl: 2.4rem;
-  --font-size--2xl: 3.2rem;
+
+  --background-primary: white;
+  --background-secondary: linear-gradient(220deg, oklch(68.92% 0.316 347.29 / 21.33%), oklch(78.53% 0.123 310.4 / 30.82%));
+  --light: oklch(100% 0 281.75 / 98.94%);
+  --dark-gray: oklch(25.27% 0.005 204.35 / 91.45%);
+  --light-gray: oklch(46.32% 0 298);
+  --violet: oklch(56.77% 0.274 318.71 / 70.53%);
+  --dark-violet: oklch(56.77% 0.274 318.71 / 78.15%);
+  --violet-blue: oklch(47.06% 0.269 281.75 / 74.87%);
+  --dark-violet-blue: oklch(47.06% 0.269 281.75 / 98.1%);
+  --violet-gradient: linear-gradient(100deg, oklch(56.77% 0.274 318.71 / 70.53%) -0.03%, oklch(47.06% 0.269 281.75 / 74.87%) 51.08%, oklch(56.77% 0.274 318.71 / 70.53%) 94%);
+  --violet-gradient-dark: linear-gradient(100deg, oklch(46.77% 0.274 318.71 / 70.53%) -0.03%, oklch(37.06% 0.269 281.75 / 74.87%) 51.08%, oklch(46.77% 0.274 318.71 / 70.53%) 94%);
 }
+
+input:focus {
+  outline: 2px solid var(--violet);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: var(--dark-gray);
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: var(--dark-gray);
+}
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -28,3 +49,37 @@ body {
   font-size: 1.4rem;
   line-height: normal;
 }
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 641px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 769px) {}
+
+@media (max-width: 1025px) {
+  .container {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1133px) {}
+
+@media (max-width: 1537px) {}

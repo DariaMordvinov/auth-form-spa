@@ -1,0 +1,23 @@
+.button {
+    width: 80%;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    color: var(--light);
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    background-size: 200% 200%;
+    background-image: var(--violet-gradient);
+    transition: background-position 0.6s, color 0.6s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+.button:active {
+    background-image: var(--violet-gradient-dark);
+}

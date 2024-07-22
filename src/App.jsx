@@ -3,7 +3,7 @@ import Auth from "./containers/Auth";
 function App() {
 
   return (
-    <div>
+    <div className="container">
       <Auth />
     </div>
   )
