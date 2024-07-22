@@ -14,6 +14,7 @@
     font-size: 1.6rem;
     color: var(--dark-gray);
     left: 0.8rem;
+    cursor: text;
 }
 
 .input:focus-within label {
