@@ -7,8 +7,8 @@ npm run dev
 ```
 
 You can mock:
-* sign in
-* sign up
-* forgot password
+* sign in (any valid email and any password)
+* sign up (any valid email and any valid password - +8 characters, uppercase, lowercase, digits)
+* forgot password (any valid email)
 * logout
 * and errors on validating data / network errors.

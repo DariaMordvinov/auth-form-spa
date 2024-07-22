@@ -105,7 +105,7 @@ const Auth = ({ }) => {
         <div className={styles.wrapper}>
             <div className={styles.header}>
                 <h1 className={styles.title}>Welcome aboard!</h1>
-                <p className={styles.secondaryTitle}>Sign in to continue</p>
+                <p className={styles.secondaryTitle}>Sign {isLogin ? "in" : "up"} to continue</p>
             </div>
             {isLogin
                 ? <Login
