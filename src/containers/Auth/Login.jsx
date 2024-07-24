@@ -20,7 +20,7 @@ export const Login = ({
                     ? <PasswordRecovery
                         email={email}
                         setEmail={setEmail} />
-                    : <><div className={styles.form}>
+                    : <><form className={styles.form}>
                         <Input
                             label="Email"
                             value={email}
@@ -32,7 +32,7 @@ export const Login = ({
                             value={password}
                             setValue={setPassword}
                             type={"password"} />
-                    </div>
+                    </form>
                         <p onClick={() => setIsForgot(true)} className={styles.recoveryLink}>Forgot password</p></>}
         </div>
     )

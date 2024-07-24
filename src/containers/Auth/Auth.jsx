@@ -137,9 +137,9 @@ const Auth = ({ }) => {
                             ? <p>Please don't close this tab</p>
                             : isLogin
                                 ? <><p>Don't have an account?</p>
-                                    <span onClick={toggleMode} className={styles.signLink}>Sign up</span></>
+                                    <a onClick={toggleMode} className={styles.signLink}>Sign up</a></>
                                 : <><p>Already have an acconut?</p>
-                                    <span onClick={toggleMode} className={styles.signLink}>Sign in</span></>}
+                                    <a onClick={toggleMode} className={styles.signLink}>Sign in</a></>}
                 </div>
             </div>
         </div>

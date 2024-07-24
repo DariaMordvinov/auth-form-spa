@@ -13,7 +13,7 @@ export const SignUp = ({ isLoading,
         <div className={`${styles.formWrapper} ${styles.signUp}`}>
             {isLoading
                 ? <Loader />
-                : <div className={styles.form}>
+                : <form className={styles.form}>
                     <Input
                         label={"Email"}
                         value={email}
@@ -34,7 +34,7 @@ export const SignUp = ({ isLoading,
                         setValue={setPasswordRepeat}
                         label={"Confirm password"}
                         type={"password"} />
-                </div>}
+                </form>}
         </div>
     )
 }
